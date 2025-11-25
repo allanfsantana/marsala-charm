@@ -53,7 +53,7 @@ lorena.amin@terra.com.br</p>
           </div>
 
           <div className="h-[400px] rounded-lg overflow-hidden bg-muted border border-border">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1962787634144!2d-46.65641968502211!3d-23.56140098468213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1sen!2sbr!4v1234567890123" width="100%" height="100%" style={{
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.271234567890!2d-43.35123456789012!3d-21.76123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989b5e123456789a%3A0x123456789abcdef0!2sAv.%20Bar%C3%A3o%20do%20Rio%20Branco%2C%202595%20-%20Centro%2C%20Juiz%20de%20Fora%20-%20MG%2C%2036010-011!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="100%" style={{
             border: 0
           }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
           </div>
