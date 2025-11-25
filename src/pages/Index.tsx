@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import WhyChoose from "@/components/WhyChoose";
 import Reasons from "@/components/Reasons";
@@ -11,6 +12,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <Navbar />
       <Hero />
       <WhyChoose />
       <Reasons />
