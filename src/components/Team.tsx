@@ -1,42 +1,24 @@
 import { Button } from "@/components/ui/button";
 
 const Team = () => {
-  const teamHighlights = [
-    "Corpo Técnico altamente qualificado e experiente",
-    "Cláudia Amin como sócia fundadora",
-    "Compromisso e ética",
-    "Corpo jurídico atualizado com novos entendimentos",
-    "Equipe focada em resultados para os clientes"
-  ];
-
   return (
-    <section className="py-20 px-6 bg-primary text-primary-foreground">
-      <div className="container max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-palatino font-bold mb-12">
+    <section className="py-20 px-6 bg-[#F5E6E8]">
+      <div className="container max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-palatino font-bold mb-8 text-marsala">
           Quem Somos
         </h2>
         
-        <div className="max-w-3xl mx-auto space-y-6 mb-12">
-          <p className="text-lg opacity-95 leading-relaxed">
-            O escritório Cláudia Amin é formado por advogados especializados e 
-            comprometidos com a excelência no atendimento jurídico.
-          </p>
-          
-          <div className="space-y-3 py-8">
-            {teamHighlights.map((highlight, index) => (
-              <div key={index} className="text-left pl-6 border-l-2 border-primary-foreground/30">
-                <p className="text-base opacity-90">{highlight}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <p className="text-lg md:text-xl text-marsala/80 leading-relaxed mb-12 max-w-3xl mx-auto">
+          Cláudia Amin e Lorena Mascarenhas, advogadas especializadas em direito imobiliário, 
+          com ampla experiência em assessoria para imobiliárias. Uma advocacia com foco na 
+          área consultiva e preventiva.
+        </p>
 
         <Button 
           size="lg" 
-          variant="secondary"
-          className="text-base px-8"
+          className="bg-[#8B5A5A] hover:bg-[#704848] text-white px-8 py-4 text-base"
         >
-          Conheça nossa equipe
+          Falar agora com uma especialista
         </Button>
       </div>
     </section>
