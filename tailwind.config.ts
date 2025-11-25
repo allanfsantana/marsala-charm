@@ -13,12 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'palatino': ['Palatino Linotype', 'Book Antiqua', 'Palatino', 'serif'],
+        'caudex': ['Caudex', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        marsala: {
+          DEFAULT: "hsl(var(--marsala))",
+          dark: "hsl(var(--marsala-dark))",
+          light: "hsl(var(--marsala-light))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
