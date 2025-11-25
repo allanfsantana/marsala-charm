@@ -5,15 +5,15 @@ const WhyChoose = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Card Esquerdo - Rosa claro com borda */}
           <div className="bg-background border-2 border-primary/30 rounded-2xl p-8 md:p-12 flex items-center">
-            <p className="text-primary text-lg leading-relaxed font-caudex text-justify md:text-lg">
+            <p className="text-primary text-lg leading-relaxed font-caudex md:text-lg text-center">
               Entendemos que lidar com questões jurídicas pode ser complexo e desafiador. É por isso que oferecemos um atendimento especializado e personalizado, colocando suas necessidades e interesses em primeiro lugar.
             </p>
           </div>
           
           {/* Card Direito - Bordô escuro */}
           <div className="bg-marsala-dark rounded-2xl p-8 md:p-12 flex items-center">
-            <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-palatino font-bold leading-tight">
-              A SOLUÇÃO JURÍDICA QUE VOCÊ PRECISA PARA PROTEGER SUA PROPRIEDADE.
+            <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-palatino font-bold leading-tight text-center">
+              A SOLUÇÃO JURÍDICA QUE VOCÊ PRECISA.
             </h2>
           </div>
         </div>
