@@ -40,8 +40,9 @@ lorena.amin@terra.com.br</p>
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-1">Endereço</h3>
-                <p className="text-muted-foreground">
-                  Condomínio Edifício Lux Avenida - Av. Barão do Rio Branco, 2595 - sala 1201 Centro    <br />
+                <p className="text-muted-foreground">Condomínio Edifício Lux Avenida -
+Av. Barão do Rio Branco, 2595 - sala 1201 Centro
+Juiz de Fora, Minas Gerais, 36010-011.<br />
                   Juiz de Fora, Minas Gerais, 36010-011.  
                 </p>
               </div>
