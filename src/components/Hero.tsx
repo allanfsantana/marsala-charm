@@ -2,22 +2,29 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center bg-primary text-primary-foreground py-20 px-6">
-      <div className="container max-w-4xl text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-palatino font-bold leading-tight">
+    <section className="relative min-h-[700px] flex items-center justify-center bg-primary text-primary-foreground py-20 px-6 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM2NzA0MWIiLz48L3N2Zz4=')] bg-cover bg-center">
+      <div className="absolute inset-0 bg-primary/40"></div>
+      <div className="container max-w-5xl text-center space-y-8 relative z-10">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-palatino font-bold leading-tight">
           Escritório especializado em<br />
           Direito Imobiliário e Direito Civil
         </h1>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed opacity-95">
-          Atuação em todo o Brasil com mais de 100 anos de tradição. Oferecemos serviços jurídicos de excelência com atendimento personalizado e soluções eficazes para cada cliente.
+        <p className="text-xl md:text-2xl font-palatino font-semibold opacity-95">
+          com atuação em Juiz de Fora e região
         </p>
-        <div className="pt-4">
+        <p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed opacity-95">
+          A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
+        </p>
+        <p className="text-lg md:text-xl font-bold max-w-3xl mx-auto leading-relaxed">
+          Não importa se o seu problema é imobiliário ou civil, nós lutamos por você.
+        </p>
+        <div className="pt-6">
           <Button 
             size="lg" 
             variant="secondary"
-            className="text-base px-8 py-6 hover:scale-105 transition-transform"
+            className="text-base md:text-lg px-8 py-6 hover:scale-105 transition-transform"
           >
-            Agende uma consulta jurídica
+            Falar com uma advogada especialista
           </Button>
         </div>
       </div>
