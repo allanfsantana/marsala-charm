@@ -1,29 +1,36 @@
+import { MessageCircle, Search, ClipboardCheck, HeartPulse } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 const Reasons = () => {
   const reasons = [
     {
       number: "01",
-      title: "Atendimento 100% WhatsApp",
-      description: "Comunicação rápida e eficiente através do WhatsApp para maior comodidade"
+      icon: MessageCircle,
+      title: "Atendimento pelo WhatsApp",
+      description: "O atendimento é direto com o advogado, sem intermediários. Acolhimento, escuta e direcionamento — tudo com sigilo e objetividade."
     },
     {
       number: "02",
-      title: "Análise 100% On-line",
-      description: "Avaliação completa do seu caso de forma digital, sem necessidade de deslocamento"
+      icon: Search,
+      title: "Análise Técnica do Caso",
+      description: "Você explica o que está acontecendo, e analisamos se há inquérito, denúncia ou risco processual iminente. Caso necessário, é possível agendar uma videoconferência ou reunião presencial."
     },
     {
       number: "03",
-      title: "Excelência e compromisso jurídico",
-      description: "Comprometimento total com a defesa dos seus direitos e interesses"
+      icon: ClipboardCheck,
+      title: "Escolha a melhor forma de seguir",
+      description: "Receba um parecer técnico e os riscos envolvidos. Depois avançamos com a estratégia completa, contrato assinado digitalmente e acompanhamento imediato."
     },
     {
       number: "04",
-      title: "Atendimento Personalizado e Humano",
-      description: "Cada cliente recebe atenção individual e tratamento humanizado"
+      icon: HeartPulse,
+      title: "Acompanhamento contínuo (Suporte completo)",
+      description: "Você é informado de cada avanço do caso. Recebe atualizações, orientações e pode entrar em contato com o advogado sempre que necessário."
     }
   ];
 
   return (
-    <section className="py-20 px-6 bg-primary text-primary-foreground">
+    <section className="py-20 px-6 bg-marsala-dark text-primary-foreground">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-palatino font-bold mb-6">
@@ -31,22 +38,43 @@ const Reasons = () => {
             E COMO FUNCIONA O ATENDIMENTO:
           </h2>
           <p className="text-lg opacity-95 max-w-3xl mx-auto">
-            Oferecemos um serviço diferenciado com foco na sua comodidade e satisfação
+            Tudo começa com uma conversa. É e mais simples do que você imagina.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {reasons.map((reason) => (
-            <div key={reason.number} className="space-y-3">
-              <div className="flex items-start gap-4">
-                <span className="text-5xl font-bold opacity-50">{reason.number}</span>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">{reason.title}</h3>
-                  <p className="opacity-90">{reason.description}</p>
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {reasons.map((reason) => {
+            const IconComponent = reason.icon;
+            return (
+              <div 
+                key={reason.number} 
+                className="bg-marsala-dark/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-marsala-dark/60 transition-all"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <IconComponent className="w-12 h-12 text-white mb-4" strokeWidth={1.5} />
+                    <span className="text-6xl font-bold opacity-30 font-palatino">{reason.number}</span>
+                  </div>
+                  <div className="flex-1 mt-2">
+                    <h3 className="text-xl font-bold mb-3 font-palatino">{reason.title}</h3>
+                    <p className="opacity-90 leading-relaxed font-caudex text-sm">
+                      {reason.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
+        </div>
+
+        <div className="flex justify-center">
+          <Button 
+            size="lg" 
+            variant="secondary"
+            className="text-base md:text-lg px-10 py-6 bg-primary/80 hover:bg-primary text-white"
+          >
+            Quero tirar uma dúvida
+          </Button>
         </div>
       </div>
     </section>
