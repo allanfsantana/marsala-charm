@@ -7,9 +7,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-palatino font-bold text-foreground mb-4">
             Entre em Contato
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Estamos prontos para atender você
-          </p>
+          <p className="text-lg text-muted-foreground">Estamos prontas para atender você</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
