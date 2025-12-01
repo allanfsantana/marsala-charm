@@ -48,8 +48,10 @@ Juiz de Fora, Minas Gerais, 36010-011.<br />
               </div>
             </div>
 
-            <Button size="lg" className="w-full md:w-auto">
-              Agende uma consulta
+            <Button size="lg" className="w-full md:w-auto" asChild>
+              <a href="https://wa.me/5532988234428" target="_blank" rel="noopener noreferrer">
+                Agende uma consulta
+              </a>
             </Button>
           </div>
 

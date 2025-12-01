@@ -72,8 +72,11 @@ const Reasons = () => {
             size="lg" 
             variant="secondary"
             className="text-base md:text-lg px-10 py-6 bg-primary/80 hover:bg-primary text-white"
+            asChild
           >
-            Quero tirar uma dúvida
+            <a href="https://wa.me/5532999613224" target="_blank" rel="noopener noreferrer">
+              Quero tirar uma dúvida
+            </a>
           </Button>
         </div>
       </div>

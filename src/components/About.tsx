@@ -27,8 +27,10 @@ const About = () => {
         </div>
         
         <div className="flex justify-center mt-12">
-          <Button size="lg" className="bg-[#8B5A5A] hover:bg-[#704848] text-white px-8 py-6 text-base">
-            Quero falar com a equipe
+          <Button size="lg" className="bg-[#8B5A5A] hover:bg-[#704848] text-white px-8 py-6 text-base" asChild>
+            <a href="https://wa.me/5532988234428" target="_blank" rel="noopener noreferrer">
+              Quero falar com a equipe
+            </a>
           </Button>
         </div>
       </div>
