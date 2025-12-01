@@ -28,9 +28,13 @@ const WhenToHire = () => {
   return (
     <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-palatino font-bold text-primary text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-palatino font-bold text-primary text-center mb-8">
           Quando Contratar Cláudia Amin Advogados?
         </h2>
+
+        <p className="text-lg md:text-xl font-caudex text-primary text-center mb-12">
+          Quando estiver enfrentando algum problema relacionado ao Direito Imobiliário
+        </p>
 
         {/* Icons timeline */}
         <div className="relative mb-16">
