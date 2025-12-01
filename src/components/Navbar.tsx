@@ -40,8 +40,8 @@ lorena.amin@terra.com.br
           </a>
         </div>
 
-        <Button variant="secondary" className="hidden md:inline-flex">
-          Contato
+        <Button variant="secondary" className="hidden md:inline-flex" asChild>
+          <a href="#contato-final">Contato</a>
         </Button>
       </div>
     </nav>;
