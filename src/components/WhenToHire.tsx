@@ -1,6 +1,12 @@
 import { Home, FileCheck, Calendar, BarChart3, Gavel, Users, HeartCrack, FileText, DollarSign, House, MapPin, FileStack, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const WhenToHire = () => {
+  const titleReveal = useScrollReveal({ threshold: 0.3 });
+  const iconsReveal = useScrollReveal({ threshold: 0.2, delay: 100 });
+  const additionalReveal = useScrollReveal({ threshold: 0.3, delay: 200 });
+  const buttonReveal = useScrollReveal({ threshold: 0.4, delay: 300 });
+  
   const situations = [{
     icon: Home,
     title: "Imóvel sem documentação"
@@ -19,16 +25,18 @@ const WhenToHire = () => {
   }];
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-palatino font-bold text-primary text-center mb-8">
-          Quando Contratar Cláudia Amin Advogados?
-        </h2>
+        <div ref={titleReveal.ref} className={`scroll-reveal ${titleReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
+          <h2 className="text-3xl md:text-4xl font-palatino font-bold text-primary text-center mb-8">
+            Quando Contratar Cláudia Amin Advogados?
+          </h2>
 
-        <p className="text-lg md:text-xl font-caudex text-primary text-center mb-12">
-          Quando estiver enfrentando algum problema relacionado ao Direito Imobiliário
-        </p>
+          <p className="text-lg md:text-xl font-caudex text-primary text-center mb-12">
+            Quando estiver enfrentando algum problema relacionado ao Direito Imobiliário
+          </p>
+        </div>
 
         {/* Icons timeline */}
-        <div className="relative mb-16">
+        <div ref={iconsReveal.ref} className={`relative mb-16 scroll-reveal ${iconsReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <div className="flex justify-between items-start max-w-6xl mx-auto relative">
             {/* Dotted line connecting circles */}
             <div className="absolute top-16 left-0 right-0 h-0.5 border-t-2 border-dashed border-primary/40 hidden md:block" style={{
@@ -51,7 +59,7 @@ const WhenToHire = () => {
         <div className="h-2 mb-16 rounded-full bg-gradient-to-r from-amber-200 via-orange-300 to-marsala-dark max-w-6xl mx-auto" />
 
         {/* New Section: Additional Situations */}
-        <div className="mb-16">
+        <div ref={additionalReveal.ref} className={`mb-16 scroll-reveal ${additionalReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <h3 className="text-2xl font-palatino text-primary text-center mb-12 md:text-xl font-thin">
             Estiver passando por alguma dessas situações
           </h3>
@@ -96,7 +104,7 @@ const WhenToHire = () => {
         </div>
 
         {/* Button */}
-        <div className="flex justify-center">
+        <div ref={buttonReveal.ref} className={`flex justify-center scroll-reveal ${buttonReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-10 py-6" asChild>
             <a href="https://wa.me/5532988234428" target="_blank" rel="noopener noreferrer">
               Falar com o escritório agora
