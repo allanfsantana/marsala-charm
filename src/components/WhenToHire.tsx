@@ -1,4 +1,4 @@
-import { Home, FileCheck, Calendar, BarChart3, Gavel } from "lucide-react";
+import { Home, FileCheck, Calendar, BarChart3, Gavel, Users, HeartCrack, FileText, DollarSign, House, MapPin, FileStack, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhenToHire = () => {
@@ -56,7 +56,37 @@ const WhenToHire = () => {
         </div>
 
         {/* Gradient bar */}
-        <div className="h-2 mb-12 rounded-full bg-gradient-to-r from-amber-200 via-orange-300 to-marsala-dark max-w-6xl mx-auto" />
+        <div className="h-2 mb-16 rounded-full bg-gradient-to-r from-amber-200 via-orange-300 to-marsala-dark max-w-6xl mx-auto" />
+
+        {/* New Section: Additional Situations */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-palatino font-bold text-primary text-center mb-12">
+            Estiver passando por alguma dessas situações
+          </h3>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+            {[
+              { icon: Users, title: "Enfrenta algum conflito familiar e precisa de orientação" },
+              { icon: HeartCrack, title: "Precisa fazer seu divórcio" },
+              { icon: Users, title: "Disputa sobre guarda dos filhos" },
+              { icon: FileText, title: "Problemas com Pensão alimentícia" },
+              { icon: House, title: "Precisa regularizar bens de herança e proteger seu patrimônio" },
+              { icon: Users, title: "Necessitar solicitar a interdição de um familiar" },
+              { icon: MapPinned, title: "Mora no exterior e precisa regularizar alguma questão legal no Brasil" },
+              { icon: FileStack, title: "Recebeu uma notificação Judicial da Vara de Família" },
+              { icon: Home, title: "Tem dúvidas sobre Regime de Bens" },
+            ].map((item, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-primary bg-background flex items-center justify-center mb-4">
+                  <item.icon className="w-10 h-10 md:w-12 md:h-12 text-primary" strokeWidth={1.5} />
+                </div>
+                <p className="text-primary text-center text-xs md:text-sm font-caudex leading-relaxed">
+                  {item.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Button */}
         <div className="flex justify-center">
