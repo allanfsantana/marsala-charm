@@ -4,25 +4,27 @@ import heroOffice from "@/assets/hero-office.jpg";
 const Hero = () => {
   return (
     <section 
-      className="relative min-h-[700px] flex items-center justify-center bg-primary text-primary-foreground py-20 px-6 bg-cover bg-center"
+      className="relative min-h-[700px] flex flex-col items-center justify-between bg-primary text-primary-foreground pt-8 pb-12 px-6 bg-cover bg-center"
       style={{ backgroundImage: `url(${heroOffice})` }}
     >
       <div className="absolute inset-0 bg-[#67041b]/60"></div>
-      <div className="container max-w-5xl text-center space-y-8 relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-palatino font-bold leading-tight">
-          Escritório especializado em<br />
-          Direito Imobiliário e Direito Civil
+      
+      {/* Título no topo */}
+      <div className="container max-w-5xl text-center relative z-10">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-palatino font-bold leading-tight">
+          Escritório especializado em Direito Imobiliário e Direito Civil com atuação em Juiz de Fora e região
         </h1>
-        <p className="text-xl md:text-2xl font-palatino font-semibold opacity-95">
-          com atuação em Juiz de Fora e região
-        </p>
-        <p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed opacity-95">
+      </div>
+      
+      {/* Subtítulo e botão na parte inferior */}
+      <div className="container max-w-4xl text-center space-y-6 relative z-10">
+        <p className="text-base md:text-lg leading-relaxed opacity-95">
           A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
         </p>
-        <p className="text-lg md:text-xl font-bold max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl font-bold leading-relaxed">
           Não importa se o seu problema é imobiliário ou civil, nós lutamos por você.
         </p>
-        <div className="pt-6">
+        <div className="pt-4">
           <Button 
             size="lg" 
             variant="secondary"
