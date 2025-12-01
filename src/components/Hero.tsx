@@ -10,7 +10,7 @@ const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-primary/60"></div>
-      <div className="container max-w-5xl text-center space-y-8 relative z-10">
+      <div className="container max-w-5xl text-center space-y-8 relative z-10 -mt-20 md:-mt-32">
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-palatino font-bold leading-tight">
           Escritório especializado em<br />
           Direito Imobiliário e Direito Civil
