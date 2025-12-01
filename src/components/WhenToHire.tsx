@@ -80,7 +80,7 @@ const WhenToHire = () => {
             title: "Mora no exterior e precisa regularizar alguma questão legal no Brasil"
           }, {
             icon: FileStack,
-            title: "Recebeu uma notificação Judicial da Vara de Família"
+            title: "Recebeu uma notificação Judicial "
           }, {
             icon: Home,
             title: "Tem dúvidas sobre Regime de Bens"

@@ -36,7 +36,15 @@ const Clients = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {clientTypes.map((type, index) => {
           const Icon = type.icon;
-          return;
+          return (
+            <div key={index} className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Icon className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="font-palatino font-semibold text-foreground mb-2">{type.title}</h3>
+              <p className="font-caudex text-muted-foreground text-sm">{type.description}</p>
+            </div>
+          );
         })}
         </div>
 
