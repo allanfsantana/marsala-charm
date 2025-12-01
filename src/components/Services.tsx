@@ -66,11 +66,7 @@ const Services = () => {
         })}
         </div>
 
-        <div className="text-center">
-          <Button size="lg">
-            Ver todos os serviços
-          </Button>
-        </div>
+        
       </div>
     </section>;
 };
