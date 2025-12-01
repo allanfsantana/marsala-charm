@@ -20,8 +20,10 @@ const Hero = () => {
           Não importa se o seu problema é imobiliário ou civil, nós lutamos por você.
         </p>
         <div className="pt-4">
-          <Button size="lg" variant="secondary" className="text-base md:text-lg px-8 py-6 hover:scale-105 transition-transform">
-            Falar com uma advogada especialista
+          <Button size="lg" variant="secondary" className="text-base md:text-lg px-8 py-6 hover:scale-105 transition-transform" asChild>
+            <a href="https://wa.me/5532988234428" target="_blank" rel="noopener noreferrer">
+              Falar com uma advogada especialista
+            </a>
           </Button>
         </div>
       </div>

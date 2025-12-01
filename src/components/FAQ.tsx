@@ -47,8 +47,11 @@ const FAQ = () => {
               size="lg"
               variant="secondary"
               className="bg-background text-foreground hover:bg-background/90 px-8 py-6"
+              asChild
             >
-              QUERO FALAR COM A EQUIPE →
+              <a href="https://wa.me/5532999613224" target="_blank" rel="noopener noreferrer">
+                QUERO FALAR COM A EQUIPE →
+              </a>
             </Button>
           </div>
 

@@ -97,8 +97,10 @@ const WhenToHire = () => {
 
         {/* Button */}
         <div className="flex justify-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-10 py-6">
-            Falar com o escritório agora
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-10 py-6" asChild>
+            <a href="https://wa.me/5532988234428" target="_blank" rel="noopener noreferrer">
+              Falar com o escritório agora
+            </a>
           </Button>
         </div>
       </div>

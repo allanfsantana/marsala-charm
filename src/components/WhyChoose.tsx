@@ -24,8 +24,10 @@ const WhyChoose = () => {
 
         {/* Botão centralizado */}
         <div className="flex justify-center">
-          <Button size="lg" variant="secondary" className="text-base md:text-lg px-10 py-6 hover:scale-105 transition-transform">
-            Quero agendar um horário
+          <Button size="lg" variant="secondary" className="text-base md:text-lg px-10 py-6 hover:scale-105 transition-transform" asChild>
+            <a href="https://wa.me/5532999613224" target="_blank" rel="noopener noreferrer">
+              Quero agendar um horário
+            </a>
           </Button>
         </div>
       </div>
