@@ -4,26 +4,26 @@ import heroOffice from "@/assets/hero-office.jpg";
 const Hero = () => {
   return (
     <section 
-      className="relative min-h-[700px] flex flex-col items-center justify-between bg-primary text-primary-foreground pt-8 pb-12 px-6 bg-cover bg-center"
+      className="relative min-h-[700px] flex items-center bg-primary text-primary-foreground py-12 px-6 md:px-12 lg:px-16 bg-cover bg-center"
       style={{ backgroundImage: `url(${heroOffice})` }}
     >
       <div className="absolute inset-0 bg-[#67041b]/60"></div>
       
-      {/* Título no topo */}
-      <div className="container max-w-5xl text-center relative z-10">
+      {/* Conteúdo alinhado à esquerda */}
+      <div className="relative z-10 max-w-[95%] md:max-w-[50%] lg:max-w-[40%] text-left space-y-6">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-palatino font-bold leading-tight">
           Escritório especializado em Direito Imobiliário e Direito Civil com atuação em Juiz de Fora e região
         </h1>
-      </div>
-      
-      {/* Subtítulo e botão na parte inferior */}
-      <div className="container max-w-4xl text-center space-y-6 relative z-10 mb-16">
-        <p className="text-base md:text-lg leading-relaxed opacity-95">
-          A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
-        </p>
-        <p className="text-lg md:text-xl font-bold leading-relaxed">
-          Não importa se o seu problema é imobiliário ou civil, nós lutamos por você.
-        </p>
+        
+        <div className="space-y-4">
+          <p className="text-base md:text-lg leading-relaxed opacity-95">
+            A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
+          </p>
+          <p className="text-lg md:text-xl font-bold leading-relaxed">
+            Não importa se o seu problema é imobiliário ou civil, nós lutamos por você.
+          </p>
+        </div>
+        
         <div className="pt-4">
           <Button 
             size="lg" 
