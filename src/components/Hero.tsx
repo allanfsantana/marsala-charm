@@ -24,7 +24,7 @@ const Hero = () => {
         <p className="text-lg md:text-xl font-bold max-w-3xl mx-auto leading-relaxed">
           Não importa se o seu problema é imobiliário ou civil, nós lutamos por você.
         </p>
-        <div className="pt-6">
+        <div className="pt-6 mt-32 md:mt-48">
           <Button 
             size="lg" 
             variant="secondary"
