@@ -10,10 +10,12 @@ import Team from "@/components/Team";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+
 const Index = () => {
-  return <main className="min-h-screen">
+  return (
+    <main className="min-h-screen">
       <Navbar />
-      <Hero className="border-4" />
+      <Hero />
       <WhyChoose />
       <WhenToHire />
       <Reasons />
@@ -24,6 +26,8 @@ const Index = () => {
       <FAQ />
       <Contact />
       <Footer />
-    </main>;
+    </main>
+  );
 };
+
 export default Index;
