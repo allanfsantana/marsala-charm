@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import officeDoor from "@/assets/office-door.jpg";
+
 const WhyChoose = () => {
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-7xl mx-auto">
@@ -10,9 +12,17 @@ const WhyChoose = () => {
             </p>
           </div>
           
-          {/* Card Direito - Bordô escuro */}
-          <div className="bg-marsala-dark rounded-2xl p-8 md:p-12 flex items-center">
-            <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-palatino font-bold leading-tight text-center">
+          {/* Card Direito - Com imagem de fundo */}
+          <div 
+            className="relative bg-marsala-dark rounded-2xl p-8 md:p-12 flex items-center overflow-hidden"
+            style={{
+              backgroundImage: `url(${officeDoor})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="absolute inset-0 bg-marsala-dark/70"></div>
+            <h2 className="relative z-10 text-white text-2xl md:text-3xl lg:text-4xl font-palatino font-bold leading-tight text-center">
               A SOLUÇÃO JURÍDICA QUE VOCÊ PRECISA.
             </h2>
           </div>
