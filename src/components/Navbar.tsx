@@ -12,8 +12,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6 text-sm">
           <a href="tel:+553298234428" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Phone size={16} />
-            <span>(32) 98823-4428                                                                       
-(32) 99961-3224</span>
+            <span>(32) 98823-4428 ou (32) 99961-3224</span>
           </a>
           <a href="mailto:lorena.amin@terra.com.br" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Mail size={16} />
