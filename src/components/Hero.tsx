@@ -4,7 +4,7 @@ import heroOffice from "@/assets/hero-office.jpg";
 const Hero = () => {
   return (
     <section 
-      className="relative min-h-[700px] flex flex-col items-center justify-between text-primary-foreground py-20 px-6 bg-cover bg-center"
+      className="relative min-h-[700px] flex flex-col items-center justify-between text-primary-foreground pt-6 pb-24 px-6 bg-cover bg-center"
       style={{
         backgroundImage: `url(${heroOffice})`,
       }}
@@ -13,7 +13,7 @@ const Hero = () => {
       
       {/* Grupo superior - Título e textos */}
       <div className="container max-w-5xl text-center space-y-6 relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-palatino font-bold leading-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-palatino font-bold leading-tight">
           Escritório especializado em<br />
           Direito Imobiliário e Direito Civil
         </h1>
