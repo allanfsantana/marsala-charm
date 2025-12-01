@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 const WhyChoose = () => {
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-palatino font-bold text-marsala-dark text-center mb-12">
+          Escritório especializado em Direito Imobiliário e Direito Civil com atuação em Juiz de Fora e região
+        </h2>
+        
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Card Esquerdo - Rosa claro com borda */}
           <div className="bg-background border-2 border-primary/30 rounded-2xl p-8 md:p-12 flex items-center">
