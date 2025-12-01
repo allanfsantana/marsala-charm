@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return <main className="min-h-screen">
       <Navbar />
-      <Hero className="border-0" />
+      <Hero />
       <WhyChoose />
       <WhenToHire />
       <Reasons />

@@ -11,13 +11,13 @@ const Hero = () => {
       
       {/* Título no topo */}
       <div className="container max-w-5xl text-center relative z-10">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-palatino font-bold leading-tight">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-palatino font-bold leading-tight">
           Escritório especializado em Direito Imobiliário e Direito Civil com atuação em Juiz de Fora e região
         </h1>
       </div>
       
       {/* Subtítulo e botão na parte inferior */}
-      <div className="container max-w-4xl text-center space-y-6 relative z-10">
+      <div className="container max-w-4xl text-center space-y-6 relative z-10 mb-16">
         <p className="text-base md:text-lg leading-relaxed opacity-95">
           A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
         </p>
