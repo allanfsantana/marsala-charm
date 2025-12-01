@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
+import heroOffice from "@/assets/hero-office.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[700px] flex items-center justify-center bg-primary text-primary-foreground py-20 px-6 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM2NzA0MWIiLz48L3N2Zz4=')] bg-cover bg-center">
-      <div className="absolute inset-0 bg-primary/40"></div>
+    <section 
+      className="relative min-h-[700px] flex items-center justify-center text-primary-foreground py-20 px-6 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${heroOffice})`,
+      }}
+    >
+      <div className="absolute inset-0 bg-primary/60"></div>
       <div className="container max-w-5xl text-center space-y-8 relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-palatino font-bold leading-tight">
           Escritório especializado em<br />
