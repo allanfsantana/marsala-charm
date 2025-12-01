@@ -1,43 +1,29 @@
-import { FileText, Home, Building2, Scale, UserCheck, Gavel } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { 
+  Scale, FileText, Briefcase, Search, Gavel, Phone, Building2, 
+  CreditCard, AlertCircle, HeartPulse, Receipt, ShieldAlert, 
+  Package, Shield, Handshake, FileSearch, BookOpen 
+} from "lucide-react";
 const Services = () => {
-  const services = [{
-    icon: Home,
-    title: "Regularização de Imóveis",
-    description: "Regularização de documentação, usucapião, registro e averbação de imóveis"
-  }, {
-    icon: FileText,
-    title: "Contratos",
-    description: "Elaboração e análise de contratos de compra, venda, locação e permuta"
-  }, {
-    icon: Building2,
-    title: "Alienação e Loteamento",
-    description: "Assessoria em processos de alienação fiduciária e aprovação de loteamentos"
-  }, {
-    icon: Scale,
-    title: "Direito",
-    description: "Consultoria e assessoria jurídica preventiva em direito imobiliário e civil"
-  }, {
-    icon: UserCheck,
-    title: "Due Diligence",
-    description: "Análise detalhada de documentação e situação jurídica de imóveis"
-  }, {
-    icon: Gavel,
-    title: "Ações Imobiliárias",
-    description: "Defesa em ações de despejo, reintegração de posse e disputas imobiliárias"
-  }, {
-    icon: FileText,
-    title: "IPTU/ITR",
-    description: "Revisão de lançamentos tributários e defesas administrativas e judiciais"
-  }, {
-    icon: Building2,
-    title: "Desmembramento",
-    description: "Processos de desmembramento, remembramento e retificação de áreas"
-  }, {
-    icon: Home,
-    title: "Condomínios Imobiliários",
-    description: "Assessoria jurídica para condomínios residenciais e comerciais"
-  }];
+  const services = [
+    { icon: FileSearch, title: "Acompanhamento Processual e Diligências" },
+    { icon: Scale, title: "Consultoria Jurídica" },
+    { icon: Briefcase, title: "Jurídico Empresarial" },
+    { icon: FileText, title: "Contratos" },
+    { icon: FileText, title: "Inventário Judicial e Extra Judicial" },
+    { icon: BookOpen, title: "Pareceres Jurídicos" },
+    { icon: Handshake, title: "Mediação de Conflitos" },
+    { icon: Gavel, title: "Ajuizamento de Ações" },
+    { icon: Phone, title: "Ações contra operadora de telefonia" },
+    { icon: Building2, title: "Ações contra construtoras ou incorporadoras" },
+    { icon: CreditCard, title: "Defesa contra empréstimos consignados abusivos" },
+    { icon: AlertCircle, title: "Nome negativado indevidamente (SPC / SERASA)" },
+    { icon: HeartPulse, title: "Ações contra planos de saúde" },
+    { icon: Receipt, title: "Cobrança indevida" },
+    { icon: ShieldAlert, title: "Ações de indenização" },
+    { icon: CreditCard, title: "Clonagem de cartão" },
+    { icon: Package, title: "Produto com defeito ou problema com entrega" },
+    { icon: Shield, title: "Defesa contra fraude e golpes na internet" }
+  ];
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12">
@@ -49,21 +35,23 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
           {services.map((service, index) => {
-          const Icon = service.icon;
-          return <div key={index} className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                  </div>
+            const Icon = service.icon;
+            return (
+              <div 
+                key={index} 
+                className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border"
+              >
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon className="w-8 h-8 text-primary" />
                 </div>
-              </div>;
-        })}
+                <h3 className="font-caudex font-semibold text-foreground text-sm">
+                  {service.title}
+                </h3>
+              </div>
+            );
+          })}
         </div>
 
         
