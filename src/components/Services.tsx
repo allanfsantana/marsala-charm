@@ -1,4 +1,4 @@
-import { Scale, FileText, Briefcase, Search, Gavel, Phone, Building2, CreditCard, AlertCircle, HeartPulse, Receipt, ShieldAlert, Package, Shield, Handshake, FileSearch, BookOpen } from "lucide-react";
+import { Scale, FileText, Briefcase, Gavel, Handshake, FileSearch, BookOpen, ShieldAlert } from "lucide-react";
 const Services = () => {
   const services = [{
     icon: FileSearch,
@@ -25,35 +25,8 @@ const Services = () => {
     icon: Gavel,
     title: "Ajuizamento de Ações"
   }, {
-    icon: Phone,
-    title: "Ações contra operadora de telefonia"
-  }, {
-    icon: Building2,
-    title: "Ações contra construtoras ou incorporadoras"
-  }, {
-    icon: CreditCard,
-    title: "Defesa contra empréstimos consignados abusivos"
-  }, {
-    icon: AlertCircle,
-    title: "Nome negativado indevidamente (SPC / SERASA)"
-  }, {
-    icon: HeartPulse,
-    title: "Ações contra planos de saúde"
-  }, {
-    icon: Receipt,
-    title: "Cobrança indevida"
-  }, {
     icon: ShieldAlert,
     title: "Ações de indenização"
-  }, {
-    icon: CreditCard,
-    title: "Clonagem de cartão"
-  }, {
-    icon: Package,
-    title: "Produto com defeito ou problema com entrega"
-  }, {
-    icon: Shield,
-    title: "Defesa contra fraude e golpes na internet"
   }];
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-6xl mx-auto">
