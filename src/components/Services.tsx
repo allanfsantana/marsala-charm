@@ -28,7 +28,7 @@ const Services = () => {
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-palatino font-bold text-foreground mb-4">
-            Conheça nossos serviços
+            COM O QUE VOCÊ ENTENDE DO ASSUNTO PARA TE AJUDAR?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Oferecemos uma ampla gama de serviços jurídicos 
