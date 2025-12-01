@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const WhyChoose = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   return <section className="py-20 px-6 bg-marsala-light">
-      <div className="container max-w-7xl mx-auto">
+      <div ref={ref} className={`container max-w-7xl mx-auto scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-palatino font-bold text-marsala-dark text-center mb-12">
           Escritório especializado em Direito Imobiliário e Direito Civil com atuação em Juiz de Fora e região
         </h2>

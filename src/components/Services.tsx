@@ -1,5 +1,9 @@
 import { Scale, FileText, Briefcase, Gavel, Handshake, FileSearch, BookOpen, ShieldAlert } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const Services = () => {
+  const headerReveal = useScrollReveal({ threshold: 0.3 });
+  const gridReveal = useScrollReveal({ threshold: 0.2, delay: 100 });
+  
   const services = [{
     icon: FileSearch,
     title: "Acompanhamento Processual e Diligências"
@@ -30,14 +34,14 @@ const Services = () => {
   }];
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div ref={headerReveal.ref} className={`text-center mb-12 scroll-reveal ${headerReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <h2 className="text-3xl font-palatino font-bold text-foreground mb-4 md:text-2xl">
             CONTE COM QUEM ENTENDE DO ASSUNTO PARA TE AJUDAR
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Oferecemos uma ampla gama de serviços jurídicos para imobiliárias, condomínios, lojas, instituições, pessoas físicas e jurídicas. </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+        <div ref={gridReveal.ref} className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12 scroll-reveal ${gridReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           {services.map((service, index) => {
           const Icon = service.icon;
           return <div key={index} className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border">

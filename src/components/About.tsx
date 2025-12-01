@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import officeImage from "@/assets/office.jpg";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const About = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   return <section className="py-20 px-6 bg-marsala">
-      <div className="container max-w-7xl mx-auto">
+      <div ref={ref} className={`container max-w-7xl mx-auto scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-palatino font-bold text-[#E8B4B8]">

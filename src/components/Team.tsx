@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const Team = () => {
+  const { ref, isVisible } = useScrollReveal();
+  
   return <section className="py-20 px-6 bg-marsala">
-      <div className="container max-w-4xl mx-auto text-center">
+      <div ref={ref} className={`container max-w-4xl mx-auto text-center scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}>
         <h2 className="text-4xl md:text-5xl font-palatino font-bold mb-8 text-[#E8B4B8]">
           Quem Somos
         </h2>

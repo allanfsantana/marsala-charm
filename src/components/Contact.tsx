@@ -1,16 +1,20 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const Contact = () => {
+  const headerReveal = useScrollReveal({ threshold: 0.3 });
+  const contentReveal = useScrollReveal({ threshold: 0.2, delay: 100 });
+  
   return <section id="contato-final" className="py-20 px-6 bg-background">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div ref={headerReveal.ref} className={`text-center mb-12 scroll-reveal ${headerReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-palatino font-bold text-foreground mb-4">
             Entre em Contato
           </h2>
           <p className="text-lg text-muted-foreground">Estamos prontas para atender você</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div ref={contentReveal.ref} className={`grid md:grid-cols-2 gap-12 items-start scroll-reveal ${contentReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <div className="space-y-8">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">

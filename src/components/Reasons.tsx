@@ -1,7 +1,12 @@
 import { MessageCircle, Search, ClipboardCheck, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Reasons = () => {
+  const headerReveal = useScrollReveal({ threshold: 0.3 });
+  const cardsReveal = useScrollReveal({ threshold: 0.2, delay: 100 });
+  const buttonReveal = useScrollReveal({ threshold: 0.4, delay: 200 });
+  
   const reasons = [
     {
       number: "01",
@@ -32,7 +37,7 @@ const Reasons = () => {
   return (
     <section className="py-20 px-6 bg-marsala-dark text-primary-foreground">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div ref={headerReveal.ref} className={`text-center mb-12 scroll-reveal ${headerReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-palatino font-bold mb-6">
             POR QUE ESCOLHER O ESCRITÓRIO CLÁUDIA AMIN<br />
             E COMO FUNCIONA O ATENDIMENTO:
@@ -42,7 +47,7 @@ const Reasons = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div ref={cardsReveal.ref} className={`grid md:grid-cols-2 gap-6 mb-12 scroll-reveal ${cardsReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           {reasons.map((reason) => {
             const IconComponent = reason.icon;
             return (
@@ -67,7 +72,7 @@ const Reasons = () => {
           })}
         </div>
 
-        <div className="flex justify-center">
+        <div ref={buttonReveal.ref} className={`flex justify-center scroll-reveal ${buttonReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
           <Button 
             size="lg" 
             variant="secondary"

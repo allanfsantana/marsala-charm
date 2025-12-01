@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import heroOffice from "@/assets/hero-office.jpg";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const Hero = () => {
+  const { ref, isVisible } = useScrollReveal({ threshold: 0.2 });
+  
   return <section className="relative min-h-[700px] flex flex-col items-center justify-between bg-primary text-primary-foreground pt-8 pb-12 px-6 bg-cover bg-center" style={{
     backgroundImage: `url(${heroOffice})`
   }}>
@@ -12,7 +15,10 @@ const Hero = () => {
       </div>
       
       {/* Subtítulo e botão na parte inferior */}
-      <div className="container max-w-4xl text-center space-y-6 relative z-10 mb-16">
+      <div 
+        ref={ref}
+        className={`container max-w-4xl text-center space-y-6 relative z-10 mb-16 scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}
+      >
         <p className="text-base md:text-lg leading-relaxed opacity-95">
           A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
         </p>

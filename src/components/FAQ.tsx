@@ -5,8 +5,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const FAQ = () => {
+  const leftReveal = useScrollReveal({ threshold: 0.3 });
+  const rightReveal = useScrollReveal({ threshold: 0.3, delay: 100 });
+  
   const faqs = [
     {
       question: "Como funciona o atendimento inicial?",
@@ -34,7 +38,7 @@ const FAQ = () => {
     <section className="py-20 px-6 bg-marsala-dark text-primary-foreground">
       <div className="container max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-8">
+          <div ref={leftReveal.ref} className={`space-y-8 scroll-reveal ${leftReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
             <div>
               <h2 className="text-6xl md:text-7xl font-palatino font-bold mb-2 text-primary-foreground/30">
                 FAQ
@@ -55,7 +59,7 @@ const FAQ = () => {
             </Button>
           </div>
 
-          <div>
+          <div ref={rightReveal.ref} className={`scroll-reveal ${rightReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem 
