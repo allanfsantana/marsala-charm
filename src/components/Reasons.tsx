@@ -25,7 +25,7 @@ const Reasons = () => {
       number: "04",
       icon: HeartPulse,
       title: "Acompanhamento contínuo (Suporte completo)",
-      description: "Você é informado de cada avanço do caso. Recebe atualizações, orientações e pode entrar em contato com o advogado sempre que necessário."
+      description: "Você é informado de cada avanço do caso. Recebe atualizações, orientações e pode entrar em contato com a advogada sempre que necessário."
     }
   ];
 
