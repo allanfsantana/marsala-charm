@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-primary/60"></div>
       
       {/* Grupo superior - Título e textos */}
-      <div className="container max-w-5xl text-center space-y-8 relative z-10 pt-8">
+      <div className="container max-w-5xl text-center space-y-6 relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-palatino font-bold leading-tight">
           Escritório especializado em<br />
           Direito Imobiliário e Direito Civil
