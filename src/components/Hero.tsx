@@ -18,7 +18,7 @@ const Hero = () => {
         <p className="text-xl md:text-2xl font-palatino font-semibold opacity-95">
           com atuação em Juiz de Fora e região
         </p>
-        <p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed opacity-95 mt-16 md:mt-24">
+        <p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed opacity-95 mt-32 md:mt-48">
           A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
         </p>
         <p className="text-lg md:text-xl font-bold max-w-3xl mx-auto leading-relaxed">
