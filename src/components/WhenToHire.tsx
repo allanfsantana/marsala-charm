@@ -2,11 +2,21 @@ import { Home, FileCheck, Calendar, BarChart3, Gavel, Users, HeartCrack, FileTex
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const WhenToHire = () => {
-  const titleReveal = useScrollReveal({ threshold: 0.3 });
-  const iconsReveal = useScrollReveal({ threshold: 0.2, delay: 100 });
-  const additionalReveal = useScrollReveal({ threshold: 0.3, delay: 200 });
-  const buttonReveal = useScrollReveal({ threshold: 0.4, delay: 300 });
-  
+  const titleReveal = useScrollReveal({
+    threshold: 0.3
+  });
+  const iconsReveal = useScrollReveal({
+    threshold: 0.2,
+    delay: 100
+  });
+  const additionalReveal = useScrollReveal({
+    threshold: 0.3,
+    delay: 200
+  });
+  const buttonReveal = useScrollReveal({
+    threshold: 0.4,
+    delay: 300
+  });
   const situations = [{
     icon: Home,
     title: "Imóvel sem documentação"
@@ -26,9 +36,7 @@ const WhenToHire = () => {
   return <section className="py-20 px-6 bg-marsala-light">
       <div className="container max-w-7xl mx-auto">
         <div ref={titleReveal.ref} className={`scroll-reveal ${titleReveal.isVisible ? 'scroll-reveal-visible' : ''}`}>
-          <h2 className="text-3xl md:text-4xl font-palatino font-bold text-primary text-center mb-8">
-            Quando Contratar Cláudia Amin Advogados?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-palatino font-bold text-primary text-center mb-8">Quando Contratar Cláudia Amim Advogados?</h2>
 
           <p className="text-lg md:text-xl font-caudex text-primary text-center mb-12">
             Quando estiver enfrentando algum problema relacionado ao Direito Imobiliário
