@@ -13,7 +13,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-palatino font-bold text-[#E8B4B8]">
               Sobre Nós
             </h2>
-            <p className="text-lg text-white leading-relaxed">Cláudia Amim é mais do que um escritório de Direito imobiliário, é formado por defensoras apaixonadas pelos direitos de seus clientes.</p>
+            <p className="text-lg text-white leading-relaxed">Cláudia Amim é mais do que um escritório de advocacia, é formado por defensoras apaixonadas pelos direitos de seus clientes.</p>
             <p className="text-lg text-white leading-relaxed">
               Com mais de 40 anos de experiência e uma carreira consolidada no Direito Imobiliário e Direito Civil, o escritório traz um profundo conhecimento técnico e uma compreensão empática para cada caso.
             </p>
