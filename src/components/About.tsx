@@ -22,8 +22,8 @@ const About = () => {
           <div className="relative">
             <img src={officeImage} alt="Escritório Cláudia Amin" className="w-full h-[500px] object-cover rounded-lg" />
             <div className="absolute bottom-6 left-6 bg-[#8B5A5A]/90 backdrop-blur-sm px-8 py-6 rounded-lg">
-              <p className="text-4xl font-bold text-white mb-1">40+</p>
-              <p className="text-white text-sm">Anos de Experiência</p>
+              <p className="text-4xl font-bold text-white mb-1">+ de 40</p>
+              <p className="text-white text-sm">ANOS DE EXPERIÊNCIA</p>
             </div>
           </div>
         </div>
