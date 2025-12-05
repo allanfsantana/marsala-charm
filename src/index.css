@@ -142,4 +142,11 @@ All colors MUST be HSL.
       transition: none;
     }
   }
+
+  /* Hero section mobile adjustments */
+  @media (max-width: 768px) {
+    .hero-section .content-wrapper {
+      padding-top: 150px !important;
+    }
+  }
 }
