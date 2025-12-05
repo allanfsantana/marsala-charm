@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Subtítulo e botão na parte inferior */}
       <div 
         ref={ref}
-        className={`container max-w-4xl text-center space-y-6 relative z-10 mb-16 mt-32 md:mt-0 scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}
+        className={`container max-w-4xl text-center space-y-6 relative z-10 mb-16 mt-48 md:mt-0 scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}
       >
         <p className="text-base md:text-lg leading-relaxed opacity-95">
           A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
