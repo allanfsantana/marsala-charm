@@ -4,7 +4,7 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const Hero = () => {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.2 });
   
-  return <section className="relative min-h-[700px] flex flex-col items-center justify-between bg-primary text-primary-foreground pt-8 pb-12 px-6 bg-cover bg-center" style={{
+  return <section className="hero-section relative min-h-[700px] flex flex-col items-center justify-between bg-primary text-primary-foreground pt-8 pb-12 px-6 bg-cover bg-center" style={{
     backgroundImage: `url(${heroOffice})`
   }}>
       <div className="absolute inset-0 bg-[#67041b]/60"></div>
@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Subtítulo e botão na parte inferior */}
       <div 
         ref={ref}
-        className={`container max-w-4xl text-center space-y-6 relative z-10 mb-16 mt-48 md:mt-0 scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}
+        className={`content-wrapper container max-w-4xl text-center space-y-6 relative z-10 mb-16 scroll-reveal ${isVisible ? 'scroll-reveal-visible' : ''}`}
       >
         <p className="text-base md:text-lg leading-relaxed opacity-95">
           A justiça e segurança que você procura começa aqui. Nossa equipe de advogadas está aqui para fornecer soluções jurídicas personalizadas, adaptadas às suas necessidades.
